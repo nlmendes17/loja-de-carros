@@ -22,17 +22,21 @@
     </nav>
   </header>
 
-  <!-- Hero atualizado -->
-  <section class="h-auto md:h-[60vh] bg-cover bg-center flex flex-col items-center justify-center text-center p-10" style="background-image: url('https://images.unsplash.com/photo-1601924928584-e3b8fe10829b?auto=format&fit=crop&w=1740&q=80');">
-    <div class="bg-black bg-opacity-60 p-6 md:p-10 rounded-xl w-full max-w-3xl">
-      <h1 class="text-4xl md:text-5xl font-bold mb-2 text-white">Nome da Sua Loja Aqui</h1>
-      <hr class="my-4 border-red-500 w-1/2 mx-auto">
-      <h2 class="text-2xl md:text-4xl font-semibold mb-3">Os melhores carros estão aqui</h2>
-      <p class="text-base md:text-lg text-gray-300">Atendimento exclusivo, qualidade garantida e condições imperdíveis para você sair motorizado.</p>
+  <!-- Hero CORRIGIDO -->
+  <section class="bg-cover bg-center text-center py-16 px-4 md:py-24" style="background-image: url('https://images.unsplash.com/photo-1601924928584-e3b8fe10829b?auto=format&fit=crop&w=1740&q=80');">
+    <div class="bg-black bg-opacity-70 p-6 md:p-10 max-w-3xl mx-auto rounded-xl">
+      <h1 class="text-3xl md:text-5xl font-extrabold mb-4">Nome da Sua Loja Aqui</h1>
+      <hr class="border-red-500 w-24 mx-auto mb-4">
+      <h2 class="text-xl md:text-3xl font-semibold">Os melhores carros estão aqui</h2>
+      <p class="text-gray-300 mt-4 text-sm md:text-base">Atendimento exclusivo, qualidade garantida e condições imperdíveis para você sair motorizado.</p>
     </div>
   </section>
 
-      <!-- Card Porsche Cayenne -->
+  <!-- Destaques -->
+  <section id="destaques" class="px-6 py-16">
+    <h3 class="text-4xl font-bold text-center mb-10">Top 4 da Loja</h3>
+    <div class="scrolling-wrapper flex overflow-x-auto space-x-6 pb-4">
+
       <div class="min-w-[300px] bg-neutral-900 rounded-xl shadow-lg overflow-hidden">
         <div class="bg-red-700 px-6 py-3 relative flex items-center justify-center font-bold text-white text-xl tracking-wide">
           <span class="absolute left-0 h-full w-12 bg-red-600 skew-x-[-20deg]"></span>
@@ -51,83 +55,13 @@
         </div>
       </div>
 
-      <!-- Outros cards clones com dados diferentes -->
-      <div class="min-w-[300px] bg-neutral-900 rounded-xl shadow-lg overflow-hidden">
-        <div class="bg-red-700 px-6 py-3 relative flex items-center justify-center font-bold text-white text-xl tracking-wide">
-          <span class="absolute left-0 h-full w-12 bg-red-600 skew-x-[-20deg]"></span>
-          <span class="relative z-10">R$ 310.000</span>
-        </div>
-        <img src="https://images.unsplash.com/photo-1616788374936-848e2b55d5fd?auto=format&fit=crop&w=800&q=80" class="w-full h-48 object-cover">
-        <div class="p-6">
-          <h3 class="text-white font-extrabold text-2xl mb-3">BMW X6 M</h3>
-          <div class="flex space-x-3 mb-4 text-gray-300 text-sm">
-            <span class="flex items-center bg-neutral-800 px-3 py-1 rounded-md border border-neutral-700">2021/2021</span>
-            <span class="flex items-center bg-neutral-800 px-3 py-1 rounded-md border border-neutral-700">18.000 KM</span>
-          </div>
-          <div class="flex items-center text-gray-400 text-sm border border-neutral-700 rounded-md px-4 py-2">
-            ✔️ Revisado em concessionária
-          </div>
-        </div>
-      </div>
-
-      <div class="min-w-[300px] bg-neutral-900 rounded-xl shadow-lg overflow-hidden">
-        <div class="bg-red-700 px-6 py-3 relative flex items-center justify-center font-bold text-white text-xl tracking-wide">
-          <span class="absolute left-0 h-full w-12 bg-red-600 skew-x-[-20deg]"></span>
-          <span class="relative z-10">R$ 142.990</span>
-        </div>
-        <img src="https://images.unsplash.com/photo-1617783416850-6c8b7f7164d0?auto=format&fit=crop&w=800&q=80" class="w-full h-48 object-cover">
-        <div class="p-6">
-          <h3 class="text-white font-extrabold text-2xl mb-3">TOYOTA HILUX SRV</h3>
-          <div class="flex space-x-3 mb-4 text-gray-300 text-sm">
-            <span class="flex items-center bg-neutral-800 px-3 py-1 rounded-md border border-neutral-700">2020/2021</span>
-            <span class="flex items-center bg-neutral-800 px-3 py-1 rounded-md border border-neutral-700">39.000 KM</span>
-          </div>
-          <div class="flex items-center text-gray-400 text-sm border border-neutral-700 rounded-md px-4 py-2">
-            ✔️ Revisado em concessionária
-          </div>
-        </div>
-      </div>
-
-      <div class="min-w-[300px] bg-neutral-900 rounded-xl shadow-lg overflow-hidden">
-        <div class="bg-red-700 px-6 py-3 relative flex items-center justify-center font-bold text-white text-xl tracking-wide">
-          <span class="absolute left-0 h-full w-12 bg-red-600 skew-x-[-20deg]"></span>
-          <span class="relative z-10">R$ 142.990</span>
-        </div>
-        <img src="https://images.unsplash.com/photo-1617783416850-6c8b7f7164d0?auto=format&fit=crop&w=800&q=80" class="w-full h-48 object-cover">
-        <div class="p-6">
-          <h3 class="text-white font-extrabold text-2xl mb-3">TOYOTA HILUX SRV</h3>
-          <div class="flex space-x-3 mb-4 text-gray-300 text-sm">
-            <span class="flex items-center bg-neutral-800 px-3 py-1 rounded-md border border-neutral-700">2020/2021</span>
-            <span class="flex items-center bg-neutral-800 px-3 py-1 rounded-md border border-neutral-700">39.000 KM</span>
-          </div>
-          <div class="flex items-center text-gray-400 text-sm border border-neutral-700 rounded-md px-4 py-2">
-            ✔️ Revisado em concessionária
-            </div>
-        </div>
-      </div>
-
-      <div class="min-w-[300px] bg-neutral-900 rounded-xl shadow-lg overflow-hidden">
-        <div class="bg-red-700 px-6 py-3 relative flex items-center justify-center font-bold text-white text-xl tracking-wide">
-          <span class="absolute left-0 h-full w-12 bg-red-600 skew-x-[-20deg]"></span>
-          <span class="relative z-10">R$ 310.000</span>
-        </div>
-        <img src="https://images.unsplash.com/photo-1616788374936-848e2b55d5fd?auto=format&fit=crop&w=800&q=80" class="w-full h-48 object-cover">
-        <div class="p-6">
-          <h3 class="text-white font-extrabold text-2xl mb-3">BMW X6 M</h3>
-          <div class="flex space-x-3 mb-4 text-gray-300 text-sm">
-            <span class="flex items-center bg-neutral-800 px-3 py-1 rounded-md border border-neutral-700">2021/2021</span>
-            <span class="flex items-center bg-neutral-800 px-3 py-1 rounded-md border border-neutral-700">18.000 KM</span>
-          </div>
-          <div class="flex items-center text-gray-400 text-sm border border-neutral-700 rounded-md px-4 py-2">
-            ✔️ Revisado em concessionária
-          </div>
-        </div>
-      </div>          </div>
-        </div>
-      </div>
-
     </div>
   </section>
+
+  <!-- Footer -->
+  <footer class="text-center p-6 border-t border-neutral-800 text-neutral-500 text-sm">
+    © Nome da Sua Loja Aqui - Todos os direitos reservados.
+  </footer>
 
 </body>
 </html>
