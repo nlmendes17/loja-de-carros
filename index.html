@@ -12,7 +12,6 @@
 </head>
 <body class="bg-black text-white font-sans">
 
-  <!-- Header -->
   <header class="flex justify-between items-center px-6 py-4 border-b border-neutral-800">
     <h1 class="text-3xl font-bold">Nome da Sua Loja Aqui</h1>
     <nav class="space-x-6 text-sm">
@@ -22,7 +21,6 @@
     </nav>
   </header>
 
-  <!-- Hero -->
   <section class="h-[60vh] bg-cover bg-center flex items-center justify-center text-center" style="background-image: url('https://images.unsplash.com/photo-1601924928584-e3b8fe10829b?auto=format&fit=crop&w=1740&q=80');">
     <div class="bg-black bg-opacity-60 p-8 rounded-xl">
       <h2 class="text-5xl font-bold mb-4">Os melhores carros estão aqui</h2>
@@ -30,69 +28,68 @@
     </div>
   </section>
 
-  <!-- Destaques -->
   <section id="destaques" class="px-6 py-16">
     <h3 class="text-4xl font-bold text-center mb-10">Top 4 da Loja</h3>
     <div class="scrolling-wrapper flex overflow-x-auto space-x-6 pb-4">
-      <!-- Carros destacados -->
-      <div class="min-w-[300px] bg-neutral-900 rounded-xl shadow-md overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1617783416850-6c8b7f7164d0?auto=format&fit=crop&w=800&q=80" class="w-full h-48 object-cover">
-        <div class="p-4">
-          <h4 class="text-xl font-semibold">Toyota Corolla XEi</h4>
-          <p class="text-sm text-neutral-400">2021 • 2.0 Flex • Automático</p>
-          <p class="text-lg font-bold text-green-400 mt-2">R$ 114.990</p>
-          <p class="text-sm mt-2">Sedã com excelente desempenho e conforto. Ideal para quem busca sofisticação.</p>
+
+      <!-- Card Porsche Cayenne -->
+      <div class="min-w-[300px] bg-neutral-900 rounded-xl shadow-lg overflow-hidden">
+        <div class="bg-red-700 px-6 py-3 relative flex items-center justify-center font-bold text-white text-xl tracking-wide">
+          <span class="absolute left-0 h-full w-12 bg-red-600 skew-x-[-20deg]"></span>
+          <span class="relative z-10">R$ 580.000</span>
         </div>
-      </div>
-      <div class="min-w-[300px] bg-neutral-900 rounded-xl shadow-md overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1616788374936-848e2b55d5fd?auto=format&fit=crop&w=800&q=80" class="w-full h-48 object-cover">
-        <div class="p-4">
-          <h4 class="text-xl font-semibold">Honda Civic Touring</h4>
-          <p class="text-sm text-neutral-400">2020 • 1.5 Turbo • Automático</p>
-          <p class="text-lg font-bold text-green-400 mt-2">R$ 119.990</p>
-          <p class="text-sm mt-2">Motor turbo potente com design esportivo e tecnologia de ponta.</p>
-        </div>
-      </div>
-      <div class="min-w-[300px] bg-neutral-900 rounded-xl shadow-md overflow-hidden">
         <img src="https://images.unsplash.com/photo-1625605731933-3ae7d1d3aadd?auto=format&fit=crop&w=800&q=80" class="w-full h-48 object-cover">
-        <div class="p-4">
-          <h4 class="text-xl font-semibold">Volkswagen Nivus Highline</h4>
-          <p class="text-sm text-neutral-400">2022 • 1.0 Turbo • Automático</p>
-          <p class="text-lg font-bold text-green-400 mt-2">R$ 109.990</p>
-          <p class="text-sm mt-2">SUV urbano com ótimo consumo, tecnologia e conectividade.</p>
+        <div class="p-6">
+          <h3 class="text-white font-extrabold text-2xl mb-3">PORSCHE CAYENNE</h3>
+          <div class="flex space-x-3 mb-4 text-gray-300 text-sm">
+            <span class="flex items-center bg-neutral-800 px-3 py-1 rounded-md border border-neutral-700">2024/2024</span>
+            <span class="flex items-center bg-neutral-800 px-3 py-1 rounded-md border border-neutral-700">1.265 KM</span>
+          </div>
+          <div class="flex items-center text-gray-400 text-sm border border-neutral-700 rounded-md px-4 py-2">
+            ✔️ Revisado em concessionária
+          </div>
         </div>
       </div>
-      <div class="min-w-[300px] bg-neutral-900 rounded-xl shadow-md overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1584467735871-b0b7690a0a61?auto=format&fit=crop&w=800&q=80" class="w-full h-48 object-cover">
-        <div class="p-4">
-          <h4 class="text-xl font-semibold">Chevrolet Tracker Premier</h4>
-          <p class="text-sm text-neutral-400">2021 • 1.2 Turbo • Automático</p>
-          <p class="text-lg font-bold text-green-400 mt-2">R$ 112.990</p>
-          <p class="text-sm mt-2">Versão topo de linha com design moderno, conforto e segurança.</p>
+
+      <!-- Outros cards clones com dados diferentes -->
+      <div class="min-w-[300px] bg-neutral-900 rounded-xl shadow-lg overflow-hidden">
+        <div class="bg-red-700 px-6 py-3 relative flex items-center justify-center font-bold text-white text-xl tracking-wide">
+          <span class="absolute left-0 h-full w-12 bg-red-600 skew-x-[-20deg]"></span>
+          <span class="relative z-10">R$ 310.000</span>
+        </div>
+        <img src="https://images.unsplash.com/photo-1616788374936-848e2b55d5fd?auto=format&fit=crop&w=800&q=80" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-white font-extrabold text-2xl mb-3">BMW X6 M</h3>
+          <div class="flex space-x-3 mb-4 text-gray-300 text-sm">
+            <span class="flex items-center bg-neutral-800 px-3 py-1 rounded-md border border-neutral-700">2021/2021</span>
+            <span class="flex items-center bg-neutral-800 px-3 py-1 rounded-md border border-neutral-700">18.000 KM</span>
+          </div>
+          <div class="flex items-center text-gray-400 text-sm border border-neutral-700 rounded-md px-4 py-2">
+            ✔️ Revisado em concessionária
+          </div>
         </div>
       </div>
+
+      <div class="min-w-[300px] bg-neutral-900 rounded-xl shadow-lg overflow-hidden">
+        <div class="bg-red-700 px-6 py-3 relative flex items-center justify-center font-bold text-white text-xl tracking-wide">
+          <span class="absolute left-0 h-full w-12 bg-red-600 skew-x-[-20deg]"></span>
+          <span class="relative z-10">R$ 142.990</span>
+        </div>
+        <img src="https://images.unsplash.com/photo-1617783416850-6c8b7f7164d0?auto=format&fit=crop&w=800&q=80" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-white font-extrabold text-2xl mb-3">TOYOTA HILUX SRV</h3>
+          <div class="flex space-x-3 mb-4 text-gray-300 text-sm">
+            <span class="flex items-center bg-neutral-800 px-3 py-1 rounded-md border border-neutral-700">2020/2021</span>
+            <span class="flex items-center bg-neutral-800 px-3 py-1 rounded-md border border-neutral-700">39.000 KM</span>
+          </div>
+          <div class="flex items-center text-gray-400 text-sm border border-neutral-700 rounded-md px-4 py-2">
+            ✔️ Revisado em concessionária
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
-
-  <!-- Contato -->
-  <section id="contato" class="px-6 py-20 bg-neutral-900 text-center">
-    <h3 class="text-4xl font-bold mb-10">Contato</h3>
-    <p class="text-lg mb-2">📱 <a href="https://wa.me/5500000000000" class="text-green-400 hover:underline">Fale conosco pelo WhatsApp</a></p>
-    <p class="text-neutral-400">Endereço: </p>
-  </section>
-
-  <!-- Sobre -->
-  <section id="sobre" class="px-6 py-20 text-center">
-    <h3 class="text-4xl font-bold mb-6">Sobre Nós</h3>
-    <p class="max-w-3xl mx-auto text-lg text-neutral-300">
-      Somos apaixonados por carros e por entregar veículos de qualidade com atendimento diferenciado. Trabalhamos para realizar o sonho de cada cliente, oferecendo sempre os melhores modelos do mercado com transparência, garantia e preço justo.
-    </p>
-  </section>
-
-  <!-- Footer -->
-  <footer class="text-center p-6 border-t border-neutral-800 text-neutral-500 text-sm">
-    © Nome da Sua Loja Aqui - Todos os direitos reservados.
-  </footer>
 
 </body>
 </html>
