@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Nome da Sua Loja Aqui</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <style>
-    .scrolling-wrapper::-webkit-scrollbar { display: none; }
-    .scrolling-wrapper { -ms-overflow-style: none; scrollbar-width: none; }
-  </style>
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
 </head>
 <body class="bg-white text-neutral-900 font-sans">
 
@@ -17,7 +18,7 @@
   <img src="logo.png" alt="Logo da loja" class="h-12">
   <nav class="absolute right-6 space-x-6 text-sm">
     <a href="#destaques" class="hover:underline">Destaques</a>
-    <a href="#contato" class="hover:underline">Contato</a>
+    <a href="#" onclick="mostrarSecao('contato')" class="hover:underline">Contato</a>
     <a href="#sobre" class="hover:underline">Sobre</a>
   </nav>
 </header>
@@ -33,7 +34,7 @@
   </section>
 
   <!-- Destaques -->
-  <section id="destaques">...</section>
+ <section id="destaques" class="px-6 py-16">
     <h3 class="text-4xl font-bold text-center mb-10">Top 4 da Loja</h3>
     <div class="scrolling-wrapper flex overflow-x-auto space-x-6 pb-4">
 
@@ -129,7 +130,7 @@
 
     </div>
   </section> <!-- Contato -->
-<section id="contato" class="...">...</section>
+<section id="contato" class="hidden bg-neutral-100 text-neutral-900 px-6 py-16">
   <h3 class="text-4xl font-bold text-center mb-10">Entre em contato com a Binicar Automoveis</h3>
   <div class="grid md:grid-cols-2 gap-8">
     
@@ -185,6 +186,20 @@
   <footer class="...">...</footer>
     © Nome da Sua Loja Aqui - Todos os direitos reservados.
   </footer>
+
+<script>
+  function mostrarSecao(id) {
+    // Oculta todas as seções
+    document.querySelectorAll('section').forEach(sec => sec.classList.add('hidden'));
+    
+    // Mostra só a seção escolhida
+    const secao = document.getElementById(id);
+    if (secao) secao.classList.remove('hidden');
+    
+    // Rola até o topo da página
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
 
 </body>
 </html>
