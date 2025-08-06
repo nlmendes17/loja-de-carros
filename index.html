@@ -18,6 +18,7 @@
   <img src="logo.png" alt="Logo da loja" class="h-12">
 <nav class="absolute right-6 space-x-6 text-sm">
   <a href="#" onclick="mostrarSecao('destaques')" class="hover:underline">Home</a>
+  <a href="#" onclick="mostrarSecao('estoque')" class="hover:underline">Estoque</a>
   <a href="#" onclick="mostrarSecao('contato')" class="hover:underline">Contato</a>
   <a href="#sobre" class="hover:underline">Sobre</a>
 </nav>
@@ -184,6 +185,25 @@
   </div>
 </section>
 
+<section id="estoque" class="hidden px-6 py-16 bg-neutral-100 text-neutral-900">
+  <h3 class="text-4xl font-bold mb-10">Estoque Completo</h3>
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <!-- Carro exemplo -->
+    <div class="bg-white border border-neutral-300 rounded-xl shadow p-4">
+      <img src="https://images.unsplash.com/photo-1625605731933-3ae7d1d3aadd?auto=format&fit=crop&w=800&q=80" class="w-full h-48 object-cover rounded mb-4">
+      <h4 class="text-xl font-bold mb-1">Porsche Cayenne</h4>
+      <p class="text-sm text-gray-600 mb-2">2024/2024 • 1.265 KM</p>
+      <p class="text-sm text-gray-500 mb-2">Revisado em concessionária</p>
+      <span class="text-lg font-bold text-red-600">R$ 580.000</span>
+    </div>
+
+    <!-- Pode duplicar esse bloco acima com outros carros -->
+    
+  </div>
+</section>
+
+
   <!-- Footer -->
   <footer class="...">...</footer>
     © Nome da Sua Loja Aqui - Todos os direitos reservados.
@@ -199,6 +219,15 @@
     if (secao) secao.classList.remove('hidden');
     
     // Rola até o topo da página
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+
+<script>
+  function mostrarSecao(id) {
+    document.querySelectorAll('section').forEach(sec => sec.classList.add('hidden'));
+    const secao = document.getElementById(id);
+    if (secao) secao.classList.remove('hidden');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 </script>
