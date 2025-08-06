@@ -44,7 +44,7 @@
 <body class="bg-white text-neutral-900 font-sans">
 
   <!-- Header -->
-<header id="header" class="relative px-6 py-4 border-b border-neutral-300 flex items-center justify-center transition-all duration-300 ease-in-out" style="background: linear-gradient(to right, #000000, #666666, #ffffff);">
+<header id="header" class="fixed top-0 left-0 w-full z-50 px-6 py-4 border-b border-neutral-300 flex items-center justify-center transition-all duration-300 ease-in-out bg-gradient-to-r from-black via-gray-500 to-white">
   <img src="logo.png" alt="Logo da loja" class="h-12 transition-all duration-300 ease-in-out" id="logo">
 <nav class="absolute right-6 space-x-6 text-sm">
   <a href="#" onclick="mostrarSecao('destaques')" class="hover:underline">Home</a>
@@ -256,12 +256,14 @@
 
     if (scrollTop > lastScrollTop) {
       // Rolando pra baixo
-      header.style.background = 'linear-gradient(to right, #000000, #666666, #ffffff)';
+      header.classList.remove('bg-white');
+      header.classList.add('bg-gradient-to-r', 'from-black', 'via-gray-500', 'to-white');
       logo.classList.remove('scale-110', 'h-16');
       logo.classList.add('scale-100', 'h-12');
     } else {
       // Rolando pra cima
-      header.style.background = '#ffffff';
+      header.classList.remove('bg-gradient-to-r', 'from-black', 'via-gray-500', 'to-white');
+      header.classList.add('bg-white');
       logo.classList.remove('scale-100', 'h-12');
       logo.classList.add('scale-110', 'h-16');
     }
