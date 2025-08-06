@@ -38,19 +38,20 @@
     display: inline-block;
   }
 
-  <style>
   @keyframes bandeira-movendo {
     0% { background-position: 0 0; }
     100% { background-position: 100px 100px; }
   }
 
-  .bg-bandeira-animada {
-    background-image: url('https://cdn-icons-png.flaticon.com/512/5328/5328887.png');
-    background-repeat: repeat;
-    background-size: 150px;
-    animation: bandeira-movendo 10s linear infinite;
-    opacity: 0.05;
-  }
+.bg-bandeira-animada {
+  background-image: url('ed94a8bd-88ed-44cc-a4e6-3d1994982ccf.png');
+  background-repeat: repeat;
+  background-size: 60px;
+  animation: bandeira-movendo 20s linear infinite;
+  opacity: 0.03;
+  z-index: 0;
+}
+
 </style>
 
 </style>
@@ -163,28 +164,19 @@
 </section> <!-- fim da seção id="destaques" -->
 
 <!-- Mapa das unidades -->
-<section id="mapas" class="bg-bandeira-animada relative z-0">
-  <div class="relative z-10 px-6 py-16 bg-neutral-100 text-neutral-900">
+<section id="mapas" class="relative bg-bandeira-animada">
+  <div class="relative z-10 px-6 py-16 bg-neutral-100 bg-opacity-90 text-neutral-900">
     <h3 class="text-3xl font-bold text-center mb-10">Nossas Unidades</h3>
     <div class="grid md:grid-cols-2 gap-8">
-      <!-- Loja Curitiba -->
+      <!-- Mapa Curitiba -->
       <div class="space-y-4">
         <h4 class="text-xl font-semibold">📍 Loja Curitiba</h4>
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=..."
-          width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-          class="rounded shadow-md"
-        ></iframe>
+        <iframe src="LINK_DO_MAPA_CURITIBA" width="100%" height="250" style="border:0;" allowfullscreen loading="lazy" class="rounded shadow-md"></iframe>
       </div>
-      
-      <!-- Loja Almirante Tamandaré -->
+      <!-- Mapa Tamandaré -->
       <div class="space-y-4">
         <h4 class="text-xl font-semibold">📍 Loja Almirante Tamandaré</h4>
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=..."
-          width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-          class="rounded shadow-md"
-        ></iframe>
+        <iframe src="LINK_DO_MAPA_TAMANDARE" width="100%" height="250" style="border:0;" allowfullscreen loading="lazy" class="rounded shadow-md"></iframe>
       </div>
     </div>
   </div>
