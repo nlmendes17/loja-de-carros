@@ -242,11 +242,11 @@
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
-  // Quando a página carregar, mostra apenas a seção de destaques
   window.addEventListener('load', () => {
     mostrarSecao('destaques');
   });
-<script>
+
+  // EFEITO DO SCROLL NO HEADER
   let lastScrollTop = 0;
 
   window.addEventListener('scroll', () => {
@@ -257,20 +257,16 @@
     if (scrollTop > lastScrollTop) {
       // Rolando pra baixo
       header.style.background = 'linear-gradient(to right, #000000, #666666, #ffffff)';
-      logo.classList.remove('scale-110');
-      logo.classList.add('scale-100');
-      logo.classList.remove('h-16');
-      logo.classList.add('h-12');
+      logo.classList.remove('scale-110', 'h-16');
+      logo.classList.add('scale-100', 'h-12');
     } else {
       // Rolando pra cima
       header.style.background = '#ffffff';
-      logo.classList.remove('scale-100');
-      logo.classList.add('scale-110');
-      logo.classList.remove('h-12');
-      logo.classList.add('h-16');
+      logo.classList.remove('scale-100', 'h-12');
+      logo.classList.add('scale-110', 'h-16');
     }
 
-    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Pra evitar scroll negativo
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
   });
 </script>
 
