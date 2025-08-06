@@ -44,8 +44,8 @@
 <body class="bg-white text-neutral-900 font-sans">
 
   <!-- Header -->
-<header class="relative px-6 py-4 border-b border-neutral-300 flex items-center justify-center" style="background: linear-gradient(to right, #000000, #666666, #ffffff);">
-  <img src="logo.png" alt="Logo da loja" class="h-12">
+<header id="header" class="relative px-6 py-4 border-b border-neutral-300 flex items-center justify-center transition-all duration-300 ease-in-out" style="background: linear-gradient(to right, #000000, #666666, #ffffff);">
+  <img src="logo.png" alt="Logo da loja" class="h-12 transition-all duration-300 ease-in-out" id="logo">
 <nav class="absolute right-6 space-x-6 text-sm">
   <a href="#" onclick="mostrarSecao('destaques')" class="hover:underline">Home</a>
   <a href="#" onclick="mostrarSecao('estoque')" class="hover:underline">Estoque</a>
@@ -246,7 +246,34 @@
   window.addEventListener('load', () => {
     mostrarSecao('destaques');
   });
+<script>
+  let lastScrollTop = 0;
+
+  window.addEventListener('scroll', () => {
+    const header = document.getElementById('header');
+    const logo = document.getElementById('logo');
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+      // Rolando pra baixo
+      header.style.background = 'linear-gradient(to right, #000000, #666666, #ffffff)';
+      logo.classList.remove('scale-110');
+      logo.classList.add('scale-100');
+      logo.classList.remove('h-16');
+      logo.classList.add('h-12');
+    } else {
+      // Rolando pra cima
+      header.style.background = '#ffffff';
+      logo.classList.remove('scale-100');
+      logo.classList.add('scale-110');
+      logo.classList.remove('h-12');
+      logo.classList.add('h-16');
+    }
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Pra evitar scroll negativo
+  });
 </script>
+
 
 </body>
 </html>
