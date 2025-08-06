@@ -252,14 +252,19 @@
 </footer>
 
 <script>
-  function mostrarSecao(id) {
-    document.querySelectorAll('section').forEach(sec => {
-    if (sec.id !== 'mapas') {
-    sec.classList.add('hidden');
-  }
- });
+function mostrarSecao(id) {
+  document.querySelectorAll('section').forEach(sec => {
+    if (sec.id === 'mapas') {
+      // Só mostra o mapa se for a home
+      sec.classList.toggle('hidden', id !== 'destaques');
+    } else {
+      sec.classList.add('hidden');
+    }
+  });
+
   const secao = document.getElementById(id);
   if (secao) secao.classList.remove('hidden');
+
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
