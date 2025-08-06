@@ -37,6 +37,22 @@
     font-size: 0.8rem;
     display: inline-block;
   }
+
+  <style>
+  @keyframes bandeira-movendo {
+    0% { background-position: 0 0; }
+    100% { background-position: 100px 100px; }
+  }
+
+  .bg-bandeira-animada {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/5328/5328887.png');
+    background-repeat: repeat;
+    background-size: 150px;
+    animation: bandeira-movendo 10s linear infinite;
+    opacity: 0.05;
+  }
+</style>
+
 </style>
 
 </style>
@@ -147,38 +163,30 @@
 </section> <!-- fim da seção id="destaques" -->
 
 <!-- Mapa das unidades -->
-<section id="mapas" class="px-6 py-16 bg-neutral-100 text-neutral-900 relative overflow-hidden">
-  <div class="absolute inset-0 bg-bandeira-animada z-0"></div>
-
-  <div class="relative z-10">
+<section id="mapas" class="bg-bandeira-animada relative z-0">
+  <div class="relative z-10 px-6 py-16 bg-neutral-100 text-neutral-900">
     <h3 class="text-3xl font-bold text-center mb-10">Nossas Unidades</h3>
     <div class="grid md:grid-cols-2 gap-8">
-      <!-- Mapas aqui -->
+      <!-- Loja Curitiba -->
+      <div class="space-y-4">
+        <h4 class="text-xl font-semibold">📍 Loja Curitiba</h4>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=..."
+          width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+          class="rounded shadow-md"
+        ></iframe>
+      </div>
+      
+      <!-- Loja Almirante Tamandaré -->
+      <div class="space-y-4">
+        <h4 class="text-xl font-semibold">📍 Loja Almirante Tamandaré</h4>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=..."
+          width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+          class="rounded shadow-md"
+        ></iframe>
+      </div>
     </div>
-  </div>
-</section>
-    
-    <!-- Mapa Curitiba -->
-    <div class="space-y-4">
-      <h4 class="text-xl font-semibold">📍 Loja Curitiba</h4>
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3600.127528972208!2d-49.27416268498537!3d-25.39031268381464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce41a7dc1f0a1%3A0x83a12c7b2c8c2f03!2sAv.%20Anita%20Garibaldi%2C%203042%20-%20Curitiba%2C%20PR!5e0!3m2!1spt-BR!2sbr!4v1691948978912!5m2!1spt-BR!2sbr"
-        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        class="rounded shadow-md"
-      ></iframe>
-    </div>
-
-    <!-- Mapa Almirante Tamandaré -->
-    <div class="space-y-4">
-      <h4 class="text-xl font-semibold">📍 Loja Almirante Tamandaré</h4>
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3599.3079366289846!2d-49.303891684984755!3d-25.421095183798193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce5c2cceae3f9%3A0x489ab6fd7d712d3d!2sAlmirante%20Tamandar%C3%A9%2C%20PR!5e0!3m2!1spt-BR!2sbr!4v1691949038455!5m2!1spt-BR!2sbr"
-        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        class="rounded shadow-md"
-      ></iframe>
-    </div> <!-- fim dos mapas -->
   </div>
 </section>
 
