@@ -211,25 +211,16 @@
 
 <script>
   function mostrarSecao(id) {
-    // Oculta todas as seções
     document.querySelectorAll('section').forEach(sec => sec.classList.add('hidden'));
-    
-    // Mostra só a seção escolhida
     const secao = document.getElementById(id);
     if (secao) secao.classList.remove('hidden');
-    
-    // Rola até o topo da página
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
-</script>
 
-<script>
-  function mostrarSecao(id) {
-    document.querySelectorAll('section').forEach(sec => sec.classList.add('hidden'));
-    const secao = document.getElementById(id);
-    if (secao) secao.classList.remove('hidden');
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
+  // Quando a página carregar, mostra apenas a seção de destaques
+  window.addEventListener('load', () => {
+    mostrarSecao('destaques');
+  });
 </script>
 
 </body>
