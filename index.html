@@ -5,27 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Nome da Sua Loja Aqui</title>
   <!-- Swiper CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
 </head>
 <body class="bg-white text-neutral-900 font-sans">
 
   <!-- Header -->
-  <header class="relative px-6 py-4 border-b border-neutral-300 bg-white flex items-center justify-center">
-    <img src="logo.png" alt="Logo da loja" class="h-12">
-    <nav class="absolute right-6 space-x-6 text-sm">
-      <a href="#" onclick="mostrarSecao('destaques')" class="hover:underline">Home</a>
-      <a href="#" onclick="mostrarSecao('estoque')" class="hover:underline">Estoque</a>
-      <a href="#" onclick="mostrarSecao('contato')" class="hover:underline">Contato</a>
-      <a href="#sobre" class="hover:underline">Sobre</a>
-    </nav>
-  </header>
+<header class="relative px-6 py-4 border-b border-neutral-300 bg-white flex items-center justify-center">
+  <img src="logo.png" alt="Logo da loja" class="h-12">
+<nav class="absolute right-6 space-x-6 text-sm">
+  <a href="#" onclick="mostrarSecao('destaques')" class="hover:underline">Home</a>
+  <a href="#" onclick="mostrarSecao('estoque')" class="hover:underline">Estoque</a>
+  <a href="#" onclick="mostrarSecao('contato')" class="hover:underline">Contato</a>
+  <a href="#sobre" class="hover:underline">Sobre</a>
+</nav>
 
-  <!-- Hero -->
+  </nav>
+</header>
+
+  <!-- Hero CORRIGIDO -->
   <section class="bg-cover bg-center text-center py-16 px-4 md:py-24" style="background-image: url('https://images.unsplash.com/photo-1601924928584-e3b8fe10829b?auto=format&fit=crop&w=1740&q=80');">
     <div class="min-w-[300px] bg-white border border-neutral-200 rounded-xl shadow-md overflow-hidden">
       <h1 class="text-3xl md:text-5xl font-extrabold mb-4">Nome da Sua Loja Aqui</h1>
@@ -36,138 +39,184 @@
   </section>
 
   <!-- Destaques -->
-  <section id="destaques" class="px-6 py-16">
-    <h3 class="text-4xl font-bold text-center mb-10">Top 4 da Loja</h3>
+ <section id="destaques" class="px-6 py-16">
+  <h3 class="text-4xl font-bold text-center mb-10">Top 4 da Loja</h3>
 
-    <!-- Swiper -->
-    <div class="swiper mySwiper max-w-3xl mx-auto">
-      <div class="swiper-wrapper">
+  <!-- Swiper Container -->
+  <div class="swiper mySwiper max-w-3xl mx-auto">
+    <div class="swiper-wrapper">
 
-        <!-- Slide 1 -->
-        <div class="swiper-slide bg-neutral-900 rounded-xl shadow-lg overflow-hidden">
-          <div class="bg-red-700 px-6 py-3 relative flex items-center justify-center font-bold text-white text-xl tracking-wide">
-            <span class="absolute left-0 h-full w-12 bg-red-600 skew-x-[-20deg]"></span>
-            <span class="relative z-10">R$ 580.000</span>
+      <!-- Slide 1 -->
+      <div class="swiper-slide bg-neutral-900 rounded-xl shadow-lg overflow-hidden">
+        <div class="bg-red-700 px-6 py-3 relative flex items-center justify-center font-bold text-white text-xl tracking-wide">
+          <span class="absolute left-0 h-full w-12 bg-red-600 skew-x-[-20deg]"></span>
+          <span class="relative z-10">R$ 580.000</span>
+        </div>
+        <img src="https://images.unsplash.com/photo-1625605731933-3ae7d1d3aadd?auto=format&fit=crop&w=800&q=80" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-white font-extrabold text-2xl mb-3">PORSCHE CAYENNE</h3>
+          <div class="flex space-x-3 mb-4 text-gray-300 text-sm">
+            <span class="bg-neutral-800 px-3 py-1 rounded-md border border-neutral-700">2024/2024</span>
+            <span class="bg-neutral-800 px-3 py-1 rounded-md border border-neutral-700">1.265 KM</span>
           </div>
-          <img src="https://images.unsplash.com/photo-1625605731933-3ae7d1d3aadd?auto=format&fit=crop&w=800&q=80" class="w-full h-48 object-cover">
-          <div class="p-6">
-            <h3 class="text-white font-extrabold text-2xl mb-3">PORSCHE CAYENNE</h3>
-            <div class="flex space-x-3 mb-4 text-gray-300 text-sm">
-              <span class="bg-neutral-800 px-3 py-1 rounded-md border border-neutral-700">2024/2024</span>
-              <span class="bg-neutral-800 px-3 py-1 rounded-md border border-neutral-700">1.265 KM</span>
-            </div>
-            <div class="text-gray-400 text-sm border border-neutral-700 rounded-md px-4 py-2">
-              ✔️ Revisado em concessionária
-            </div>
+          <div class="text-gray-400 text-sm border border-neutral-700 rounded-md px-4 py-2">
+            ✔️ Revisado em concessionária
           </div>
         </div>
+      </div>
 
-        <!-- Slide 2 -->
-        <div class="swiper-slide bg-neutral-900 rounded-xl shadow-lg overflow-hidden">
-          <div class="bg-red-700 px-6 py-3 relative flex items-center justify-center font-bold text-white text-xl tracking-wide">
-            <span class="absolute left-0 h-full w-12 bg-red-600 skew-x-[-20deg]"></span>
-            <span class="relative z-10">R$ 450.000</span>
+      <!-- Slide 2 -->
+      <div class="swiper-slide bg-neutral-900 rounded-xl shadow-lg overflow-hidden">
+        <div class="bg-red-700 px-6 py-3 relative flex items-center justify-center font-bold text-white text-xl tracking-wide">
+          <span class="absolute left-0 h-full w-12 bg-red-600 skew-x-[-20deg]"></span>
+          <span class="relative z-10">R$ 450.000</span>
+        </div>
+        <img src="https://images.unsplash.com/photo-1616789911641-d75b7e07ae01?auto=format&fit=crop&w=800&q=80" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-white font-extrabold text-2xl mb-3">AUDI RS5</h3>
+          <div class="flex space-x-3 mb-4 text-gray-300 text-sm">
+            <span class="bg-neutral-800 px-3 py-1 rounded-md border border-neutral-700">2023/2023</span>
+            <span class="bg-neutral-800 px-3 py-1 rounded-md border border-neutral-700">9.000 KM</span>
           </div>
-          <img src="https://images.unsplash.com/photo-1616789911641-d75b7e07ae01?auto=format&fit=crop&w=800&q=80" class="w-full h-48 object-cover">
-          <div class="p-6">
-            <h3 class="text-white font-extrabold text-2xl mb-3">AUDI RS5</h3>
-            <div class="flex space-x-3 mb-4 text-gray-300 text-sm">
-              <span class="bg-neutral-800 px-3 py-1 rounded-md border border-neutral-700">2023/2023</span>
-              <span class="bg-neutral-800 px-3 py-1 rounded-md border border-neutral-700">9.000 KM</span>
-            </div>
-            <div class="text-gray-400 text-sm border border-neutral-700 rounded-md px-4 py-2">
-              ✔️ Blindado + Revisado em concessionária
-            </div>
+          <div class="text-gray-400 text-sm border border-neutral-700 rounded-md px-4 py-2">
+            ✔️ Blindado + Revisado em concessionária
           </div>
         </div>
+      </div>
 
-        <!-- Slide 3 -->
-        <div class="swiper-slide bg-neutral-900 rounded-xl shadow-lg overflow-hidden">
-          <div class="bg-red-700 px-6 py-3 relative flex items-center justify-center font-bold text-white text-xl tracking-wide">
-            <span class="absolute left-0 h-full w-12 bg-red-600 skew-x-[-20deg]"></span>
-            <span class="relative z-10">R$ 210.000</span>
+      <!-- Slide 3 -->
+      <div class="swiper-slide bg-neutral-900 rounded-xl shadow-lg overflow-hidden">
+        <div class="bg-red-700 px-6 py-3 relative flex items-center justify-center font-bold text-white text-xl tracking-wide">
+          <span class="absolute left-0 h-full w-12 bg-red-600 skew-x-[-20deg]"></span>
+          <span class="relative z-10">R$ 210.000</span>
+        </div>
+        <img src="https://images.unsplash.com/photo-1571607387762-4991d1ec5d5b?auto=format&fit=crop&w=800&q=80" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-white font-extrabold text-2xl mb-3">BMW 320i M SPORT</h3>
+          <div class="flex space-x-3 mb-4 text-gray-300 text-sm">
+            <span class="bg-neutral-800 px-3 py-1 rounded-md border border-neutral-700">2022/2022</span>
+            <span class="bg-neutral-800 px-3 py-1 rounded-md border border-neutral-700">23.000 KM</span>
           </div>
-          <img src="https://images.unsplash.com/photo-1571607387762-4991d1ec5d5b?auto=format&fit=crop&w=800&q=80" class="w-full h-48 object-cover">
-          <div class="p-6">
-            <h3 class="text-white font-extrabold text-2xl mb-3">BMW 320i M SPORT</h3>
-            <div class="flex space-x-3 mb-4 text-gray-300 text-sm">
-              <span class="bg-neutral-800 px-3 py-1 rounded-md border border-neutral-700">2022/2022</span>
-              <span class="bg-neutral-800 px-3 py-1 rounded-md border border-neutral-700">23.000 KM</span>
-            </div>
-            <div class="text-gray-400 text-sm border border-neutral-700 rounded-md px-4 py-2">
-              ✔️ Impecável, única dona
-            </div>
+          <div class="text-gray-400 text-sm border border-neutral-700 rounded-md px-4 py-2">
+            ✔️ Impecável, única dona
           </div>
         </div>
+      </div>
 
-        <!-- Slide 4 -->
-        <div class="swiper-slide bg-neutral-900 rounded-xl shadow-lg overflow-hidden">
-          <div class="bg-red-700 px-6 py-3 relative flex items-center justify-center font-bold text-white text-xl tracking-wide">
-            <span class="absolute left-0 h-full w-12 bg-red-600 skew-x-[-20deg]"></span>
-            <span class="relative z-10">R$ 380.000</span>
+      <!-- Slide 4 -->
+      <div class="swiper-slide bg-neutral-900 rounded-xl shadow-lg overflow-hidden">
+        <div class="bg-red-700 px-6 py-3 relative flex items-center justify-center font-bold text-white text-xl tracking-wide">
+          <span class="absolute left-0 h-full w-12 bg-red-600 skew-x-[-20deg]"></span>
+          <span class="relative z-10">R$ 380.000</span>
+        </div>
+        <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?auto=format&fit=crop&w=800&q=80" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-white font-extrabold text-2xl mb-3">MERCEDES CLA45 AMG</h3>
+          <div class="flex space-x-3 mb-4 text-gray-300 text-sm">
+            <span class="bg-neutral-800 px-3 py-1 rounded-md border border-neutral-700">2021/2022</span>
+            <span class="bg-neutral-800 px-3 py-1 rounded-md border border-neutral-700">17.000 KM</span>
           </div>
-          <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?auto=format&fit=crop&w=800&q=80" class="w-full h-48 object-cover">
-          <div class="p-6">
-            <h3 class="text-white font-extrabold text-2xl mb-3">MERCEDES CLA45 AMG</h3>
-            <div class="flex space-x-3 mb-4 text-gray-300 text-sm">
-              <span class="bg-neutral-800 px-3 py-1 rounded-md border border-neutral-700">2021/2022</span>
-              <span class="bg-neutral-800 px-3 py-1 rounded-md border border-neutral-700">17.000 KM</span>
-            </div>
-            <div class="text-gray-400 text-sm border border-neutral-700 rounded-md px-4 py-2">
-              ✔️ Manual + chave reserva + revisões
-            </div>
+          <div class="text-gray-400 text-sm border border-neutral-700 rounded-md px-4 py-2">
+            ✔️ Manual + chave reserva + revisões
           </div>
         </div>
+      </div>
 
+    </div>
+  </div>
+</section>
+
+    </div>
+  </section> <!-- Contato -->
+<section id="contato" class="hidden bg-neutral-100 text-neutral-900 px-6 py-16">
+  <h3 class="text-4xl font-bold text-center mb-10">Entre em contato com a Binicar Automoveis</h3>
+  <div class="grid md:grid-cols-2 gap-8">
+    
+    <!-- Formulário -->
+    <form class="space-y-4">
+      <div class="grid grid-cols-2 gap-4">
+        <input type="text" placeholder="Seu nome" class="p-3 border border-neutral-300 rounded-md w-full" />
+        <input type="email" placeholder="Seu email" class="p-3 border border-neutral-300 rounded-md w-full" />
+        <input type="text" placeholder="DDD" class="p-3 border border-neutral-300 rounded-md w-full" />
+        <input type="text" placeholder="Telefone" class="p-3 border border-neutral-300 rounded-md w-full" />
+        <input type="text" placeholder="Assunto" class="col-span-2 p-3 border border-neutral-300 rounded-md w-full" />
+      </div>
+      <textarea placeholder="Informações" rows="4" class="p-3 border border-neutral-300 rounded-md w-full"></textarea>
+      <div class="flex items-center gap-2">
+        <input type="checkbox" id="promo" />
+        <label for="promo">Quero receber promoções e ofertas.</label>
+      </div>
+      <div class="bg-white border border-neutral-300 rounded p-4 shadow w-fit">
+        <p class="text-sm text-neutral-500">🔒 [Simulação] Não sou um robô</p>
+      </div>
+      <button type="submit" class="bg-black text-white px-6 py-3 rounded-md">Enviar</button>
+    </form>
+
+    <!-- Informações da loja -->
+    <div class="space-y-8">
+      <div>
+        <h4 class="font-bold text-lg mb-1">📍 Loja Curitiba</h4>
+        <div class="bg-neutral-800 text-black px-4 py-2 rounded shadow inline-block mb-2">📞 (41) 3354-0510</div>
+        <p class="text-sm">Av. Anita Garibaldi, 3042 - Curitiba</p>
+        <p class="text-sm">vendasbinicar@gmail.com</p>
+      </div>
+
+      <div>
+        <h4 class="font-bold text-lg mb-1">📍 Loja Almirante Tamandaré</h4>
+        <div class="bg-neutral-800 text-black px-4 py-2 rounded shadow inline-block mb-2">📞 (41) 3657-8755</div>
+        <p class="text-sm">Av. Emílio Johnson - Almirante Tamandaré</p>
+        <p class="text-sm">vendasbinicar@gmail.com</p>
+      </div>
+
+      <div>
+        <h4 class="font-bold text-lg mb-2">⏰ Atendimento</h4>
+        <table class="text-sm w-full">
+          <tr><td class="pr-4">Segunda à sexta:</td><td>8:30 às 18:00</td></tr>
+          <tr><td>Sábados:</td><td>8:30 às 17:00</td></tr>
+          <tr><td>Domingos:</td><td>Favor ligar e consultar</td></tr>
+        </table>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Contato -->
-  <section id="contato" class="hidden bg-neutral-100 text-neutral-900 px-6 py-16">
-    <h3 class="text-4xl font-bold text-center mb-10">Entre em contato com a Binicar Automoveis</h3>
-    <!-- conteúdo do contato... -->
-  </section>
+<section id="estoque" class="hidden px-6 py-16 bg-neutral-100 text-neutral-900">
+  <h3 class="text-4xl font-bold mb-10">Estoque Completo</h3>
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-  <!-- Estoque -->
-  <section id="estoque" class="hidden px-6 py-16 bg-neutral-100 text-neutral-900">
-    <h3 class="text-4xl font-bold mb-10">Estoque Completo</h3>
-    <!-- conteúdo do estoque... -->
-  </section>
+    <!-- Carro exemplo -->
+    <div class="bg-white border border-neutral-300 rounded-xl shadow p-4">
+      <img src="https://images.unsplash.com/photo-1625605731933-3ae7d1d3aadd?auto=format&fit=crop&w=800&q=80" class="w-full h-48 object-cover rounded mb-4">
+      <h4 class="text-xl font-bold mb-1">Porsche Cayenne</h4>
+      <p class="text-sm text-gray-600 mb-2">2024/2024 • 1.265 KM</p>
+      <p class="text-sm text-gray-500 mb-2">Revisado em concessionária</p>
+      <span class="text-lg font-bold text-red-600">R$ 580.000</span>
+    </div>
+
+    <!-- Pode duplicar esse bloco acima com outros carros -->
+    
+  </div>
+</section>
+
 
   <!-- Footer -->
-  <footer class="text-center text-sm text-gray-500 py-6 border-t border-neutral-200">
+  <footer class="...">...</footer>
     © Nome da Sua Loja Aqui - Todos os direitos reservados.
   </footer>
 
-  <!-- Scripts -->
-  <script>
-    function mostrarSecao(id) {
-      document.querySelectorAll('section').forEach(sec => sec.classList.add('hidden'));
-      const secao = document.getElementById(id);
-      if (secao) secao.classList.remove('hidden');
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
+<script>
+  function mostrarSecao(id) {
+    document.querySelectorAll('section').forEach(sec => sec.classList.add('hidden'));
+    const secao = document.getElementById(id);
+    if (secao) secao.classList.remove('hidden');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 
-    window.addEventListener('load', () => {
-      mostrarSecao('destaques');
-    });
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    const swiper = new Swiper(".mySwiper", {
-      loop: true,
-      autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
-      },
-      effect: "slide",
-      centeredSlides: true,
-      slidesPerView: 1,
-      spaceBetween: 30,
-    });
-  </script>
+  // Quando a página carregar, mostra apenas a seção de destaques
+  window.addEventListener('load', () => {
+    mostrarSecao('destaques');
+  });
+</script>
 
 </body>
 </html>
