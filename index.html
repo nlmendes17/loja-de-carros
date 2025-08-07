@@ -336,10 +336,22 @@
 <script>
 function mostrarSecao(id) {
   document.querySelectorAll('section').forEach(sec => {
-    if (sec.id !== id) {
+  // Se clicou em "destaques", mostra também mapas e footer-home
+  if (id === 'destaques') {
+    if (['destaques', 'mapas', 'footer-home'].includes(sec.id)) {
+      sec.classList.remove('hidden');
+    } else {
       sec.classList.add('hidden');
     }
-  });
+  } else {
+    // Se clicou em outra seção, esconde tudo menos a que foi clicada
+    if (sec.id !== id) {
+      sec.classList.add('hidden');
+    } else {
+      sec.classList.remove('hidden');
+    }
+  }
+});
 
   const secao = document.getElementById(id);
   if (secao) secao.classList.remove('hidden');
