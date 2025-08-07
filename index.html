@@ -183,6 +183,44 @@
     </div>
   </div>
 </section>
+
+</section> <!-- fecha a seção dos mapas -->
+
+<!-- Rodapé estiloso exclusivo da home -->
+<section id="footer-home" class="hidden bg-neutral-200 px-6 py-10 text-center text-neutral-900">
+  <div class="grid md:grid-cols-3 items-center gap-6">
+
+    <!-- Loja Curitiba -->
+    <div class="space-y-2">
+      <h4 class="font-bold text-lg">LOJA CURITIBA</h4>
+      <p>AV. ANITA GARIBALDI, 3042 - CURITIBA</p>
+      <p class="font-bold text-lg">(41) 3354-0510</p>
+      <p>SEGUNDA À SEXTA DAS 8:30 ÀS 18:00</p>
+      <p>SÁBADO DAS 8:30 ÀS 17:00</p>
+      <p>DOMINGOS: FAVOR LIGAR E CONSULTAR</p>
+      <p>EMAIL: VENDASBINICAR@GMAIL.COM</p>
+    </div>
+
+    <!-- Logo central -->
+    <div class="flex justify-center">
+      <img src="logo.png" alt="Logo Binicar" class="h-12 md:h-16" />
+    </div>
+
+    <!-- Loja Almirante Tamandaré -->
+    <div class="space-y-2">
+      <h4 class="font-bold text-lg">LOJA ALMIRANTE TAMANDARE</h4>
+      <p>AV. EMILIO JOHNSON - ALMIRANTE TAMANDARE</p>
+      <p class="font-bold text-lg">(41) 3657-8755</p>
+      <p>SEGUNDA À SEXTA DAS 8:30 ÀS 18:00</p>
+      <p>SÁBADO DAS 8:30 ÀS 17:00</p>
+      <p>DOMINGOS: FAVOR LIGAR E CONSULTAR</p>
+      <p>EMAIL: VENDASBINICAR@GMAIL.COM</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="contato" class="hidden bg-neutral-100 text-neutral-900 px-6 py-16">
 </section>
 
 <section id="contato" class="hidden bg-neutral-100 text-neutral-900 px-6 py-16">
@@ -264,13 +302,24 @@
 <script>
 function mostrarSecao(id) {
   document.querySelectorAll('section').forEach(sec => {
-    if (sec.id !== id && sec.id !== 'mapas') {
-  sec.classList.add('hidden');
-}
+    if (sec.id !== id) {
+      sec.classList.add('hidden');
+    }
   });
 
   const secao = document.getElementById(id);
   if (secao) secao.classList.remove('hidden');
+
+  // Mostrar rodapé da home só na home
+  const footerHome = document.getElementById('footer-home');
+  if (footerHome) {
+    if (id === 'destaques') {
+      footerHome.classList.remove('hidden');
+    } else {
+      footerHome.classList.add('hidden');
+    }
+  }
+
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
